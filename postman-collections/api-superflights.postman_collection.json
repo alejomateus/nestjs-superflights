@@ -23,7 +23,7 @@
 					"response": []
 				},
 				{
-					"name": "DELETE BY ID",
+					"name": "DELETE USER BY ID",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -40,7 +40,7 @@
 					"response": []
 				},
 				{
-					"name": "GET-USER BY ID Copy",
+					"name": "GET-USER BY ID",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -100,6 +100,108 @@
 							],
 							"path": [
 								"61e9b39c58bfa50f0edeb089"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Passenger",
+			"item": [
+				{
+					"name": "GET-PASSENGER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}passenger",
+							"host": [
+								"{{host}}passenger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PASSENGER BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}user/61e9b39c58bfa50f0edeb089",
+							"host": [
+								"{{host}}user"
+							],
+							"path": [
+								"61e9b39c58bfa50f0edeb089"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-PASSENGER BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}passenger/61e9c71419d20f99850fd51d",
+							"host": [
+								"{{host}}passenger"
+							],
+							"path": [
+								"61e9c71419d20f99850fd51d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-PASSENGER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Alejandro2\",\r\n    \"email\": \"alejandro2.jimenez@miaguila.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}passenger",
+							"host": [
+								"{{host}}passenger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-PASSENGER",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"alejo2x\",\r\n    \"email\": \"alejandro2x.jimenez@miaguila.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}passenger/61e9c71419d20f99850fd51d",
+							"host": [
+								"{{host}}passenger"
+							],
+							"path": [
+								"61e9c71419d20f99850fd51d"
 							]
 						}
 					},
