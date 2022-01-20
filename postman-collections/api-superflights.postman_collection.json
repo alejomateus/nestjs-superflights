@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "aed180b6-479f-4637-b9da-779c73a3ad3d",
+		"name": "api-superflights",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GET-USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}user",
+							"host": [
+								"{{host}}user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}user/61e9b39c58bfa50f0edeb089",
+							"host": [
+								"{{host}}user"
+							],
+							"path": [
+								"61e9b39c58bfa50f0edeb089"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-USER BY ID Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}user/61e9b39c58bfa50f0edeb089",
+							"host": [
+								"{{host}}user"
+							],
+							"path": [
+								"61e9b39c58bfa50f0edeb089"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Alejandro\",\r\n    \"username\": \"alejo\",\r\n    \"email\": \"alejandro.jimenez@miaguila.com\",\r\n    \"password\": \"alejo123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}user",
+							"host": [
+								"{{host}}user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-USER",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"AlejandroX\",\r\n    \"username\": \"alejo2x\",\r\n    \"email\": \"alejandro2x.jimenez@miaguila.com\",\r\n    \"password\": \"alejo123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}user/61e9b39c58bfa50f0edeb089",
+							"host": [
+								"{{host}}user"
+							],
+							"path": [
+								"61e9b39c58bfa50f0edeb089"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
